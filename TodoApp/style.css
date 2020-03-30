@@ -1,0 +1,56 @@
+.container {
+    margin: 30px auto;
+    width: 500px;
+}
+
+.header {
+    background-image: url('img/bg.jpg');
+    width: 500px;
+    height: 100px;
+    border: 2px solid white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+.body {
+    width: 500px;
+    border: 2px solid white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px; 
+}
+
+#title {
+    font-size: 35px;
+    text-align: center;
+    margin: 10px auto;
+    color: azure;
+    font-weight: bold;
+}
+
+#currentDay {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: -15px auto;
+    color: azure;
+}
+
+.list-group span {
+    float: right;
+}
+
+#refresh {
+    margin: 5px;
+    float: right;
+    color: white;
+}
+
+#refresh :hover{
+    color: limegreen;
+}

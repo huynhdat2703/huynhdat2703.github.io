@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOS APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body onload="getCurrentDay()">
+    <div class="container">
+        <div class="header">
+            <p id="refresh" onclick="removeAllNote()"><i class="fas fa-sync"></i></p>
+            <p id="title">TODOS APP</p>
+            <p id="currentDay"></p>
+        </div>
+        <div class="body">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Add new note..." aria-label="Add new note..."
+                    aria-describedby="basic-addon2" id="newNoteText" onkeypress="checkKeyCode(event)">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-success" onclick="addNewNote()">
+                        <i class="far fa-plus-circle"></i></button>
+                </div>
+            </div>
+            <ul class="list-group" id="listNote"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
