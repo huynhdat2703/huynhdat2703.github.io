@@ -13,23 +13,21 @@
 </head>
 
 <body onload="getCurrentDay()">
-    <div class="container">
-        <div class="header">
-            <p id="refresh" onclick="removeAllNote()"><i class="fas fa-sync"></i></p>
-            <p id="title">TODOS APP</p>
-            <p id="currentDay"></p>
-        </div>
-        <div class="body">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Add new note..." aria-label="Add new note..."
-                    aria-describedby="basic-addon2" id="newNoteText" onkeypress="checkKeyCode(event)">
-                <div class="input-group-append">
-                    <button type="button" class="btn btn-success" onclick="addNewNote()">
-                        <i class="far fa-plus-circle"></i></button>
-                </div>
+    <div class="header">
+        <p id="refresh" onclick="removeAllNote()"><i class="fas fa-sync"></i></p>
+        <p id="title">TODOS APP</p>
+        <p id="currentDay"></p>
+    </div>
+    <div class="body">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Add new note..." aria-label="Add new note..."
+                aria-describedby="basic-addon2" id="newNoteText" onkeypress="checkKeyCode(event)">
+            <div class="input-group-append">
+                <button type="button" class="btn btn-success" onclick="addNewNote()">
+                    <i class="far fa-plus-circle"></i></button>
             </div>
-            <ul class="list-group" id="listNote"></ul>
         </div>
+        <ul class="list-group" id="listNote"></ul>
     </div>
 </body>
 
