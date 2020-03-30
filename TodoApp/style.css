@@ -54,3 +54,14 @@
 #refresh :hover{
     color: limegreen;
 }
+
+@media all and (max-width: 320px) {
+    .header {
+        width: 320px;
+        height: 100px;
+    }
+
+    .body {
+        width: 320px;
+    }
+ }
